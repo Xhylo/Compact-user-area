@@ -1,0 +1,39 @@
+/**
+* @name Compacteduserarea
+* @description reduces the userarea in size and moves it to the top left. click on your name to change status.
+* @author Xyhlo#9766
+* @version 0.4.2
+* @source https://github.com/voidfill/compacted-userarea
+*/
+
+@import url(https://raw.githack.com/voidfill/compacted-userarea/main/src/base.css);
+
+:root {
+    /*default: var(--background-tertiary);*/
+    --cu-serverlistbg: var(--background-tertiary);
+
+    /*default: var(--background-tertiary);*/
+    --cu-topbarbg: var(--background-tertiary);
+
+    /*default: var(--background-modifier-accent);*/
+    --cu-dividercolor: var(--background-modifier-accent);
+
+    /*set below to a value between 0 and 1 to have the statuspicker width be respective to the channelwidth*/
+    /*for example 0.5 would be half of the channels*/
+    --cu-statuspickerwidth: 1;
+
+    /*set below to 0 to not have a divider*/
+    --cu-divider: 1;
+}
+
+/*remove watermark*/
+.wordmarkWindows-1v0lYD {display: none;
+}
+.markdown-hover {
+display: none;
+}
+
+#floating-editor-window.resizable {
+max-height: unset;
+max-width: unset;
+}
